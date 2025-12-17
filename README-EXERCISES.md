@@ -2,7 +2,7 @@
 
 Este proyecto contiene una serie de ejercicios progresivos para desarrollar una aplicación de tienda de libros completa. Los ejercicios están diseñados para practicar diferentes tecnologías y enfoques, desde vanilla JavaScript hasta React.
 
-## 📋 Orden de Realización
+## Orden de Realización
 
 Los ejercicios deben realizarse en el siguiente orden:
 
@@ -13,7 +13,7 @@ Los ejercicios deben realizarse en el siguiente orden:
 
 ---
 
-## 🚀 Ejercicio 1: Backend - Servidor Express
+## Ejercicio 1: Backend - Servidor Express
 
 **Carpeta:** `back/`
 
@@ -42,7 +42,7 @@ El servidor debe estar corriendo en `http://localhost:3000`
 
 ---
 
-## 📚 Ejercicio 2: Frontend Vanilla - Carrito
+## Ejercicio 2: Frontend Vanilla - Carrito
 
 **Carpeta:** `front-cart/`
 
@@ -69,7 +69,7 @@ Abrir `index.html` en el navegador (requiere servidor backend activo)
 
 ---
 
-## 📚 Ejercicio 3: Frontend Vanilla - CRUD
+## Ejercicio 3: Frontend Vanilla - CRUD
 
 **Carpeta:** `front-crud/`
 
@@ -96,7 +96,7 @@ Abrir `index.html` en el navegador (requiere servidor backend activo)
 
 ---
 
-## 🎨 Ejercicio 4: Frontend Bootstrap - Carrito
+## Ejercicio 4: Frontend Bootstrap - Carrito
 
 **Carpeta:** `front-cart-bootstrap/`
 
@@ -124,7 +124,7 @@ Abrir `index.html` en el navegador (requiere servidor backend activo)
 
 ---
 
-## 🎨 Ejercicio 5: Frontend Bootstrap - CRUD
+## Ejercicio 5: Frontend Bootstrap - CRUD
 
 **Carpeta:** `front-crud-bootstrap/`
 
@@ -153,7 +153,7 @@ Abrir `index.html` en el navegador (requiere servidor backend activo)
 
 ---
 
-## ⚛️ Ejercicio 6: Frontend React - Carrito
+## Ejercicio 6: Frontend React - Carrito
 
 **Carpeta:** `front-cart-react/`
 
@@ -188,7 +188,7 @@ npm run dev
 
 ---
 
-## ⚛️ Ejercicio 7: Frontend React - CRUD
+## Ejercicio 7: Frontend React - CRUD
 
 **Carpeta:** `front-crud-react/`
 
@@ -224,7 +224,7 @@ npm run dev
 
 ---
 
-## ⚛️ Ejercicio 8: Frontend React - Aplicación Completa
+## Ejercicio 8: Frontend React - Aplicación Completa
 
 **Carpeta:** `front-all-react/`
 
@@ -259,7 +259,7 @@ npm run dev
 
 ---
 
-## 🛠️ Tecnologías Utilizadas
+## Tecnologías Utilizadas
 
 - **Backend:** Node.js, Express, CORS
 - **Frontend Vanilla:** HTML5, CSS3, JavaScript ES6+
@@ -268,7 +268,7 @@ npm run dev
 
 ---
 
-## 📝 Notas Importantes
+## Notas Importantes
 
 1. **Requisitos previos:**
    - Node.js instalado (v14 o superior)
@@ -291,20 +291,20 @@ npm run dev
 
 ---
 
-## 🎯 Criterios de Evaluación
+## Criterios de Evaluación
 
-- ✅ Funcionalidad completa de cada ejercicio
-- ✅ Código limpio y bien organizado
-- ✅ Manejo apropiado de errores
-- ✅ Interfaz de usuario intuitiva
-- ✅ Responsive design
-- ✅ Buenas prácticas de programación
-- ✅ Comunicación correcta con la API
-- ✅ Gestión de estado apropiada
+- Funcionalidad completa de cada ejercicio
+- Código limpio y bien organizado
+- Manejo apropiado de errores
+- Interfaz de usuario intuitiva
+- Responsive design
+- Buenas prácticas de programación
+- Comunicación correcta con la API
+- Gestión de estado apropiada
 
 ---
 
-## 📚 Recursos Adicionales
+## Recursos Adicionales
 
 - [Documentación de Express](https://expressjs.com/)
 - [MDN Web Docs](https://developer.mozilla.org/)
@@ -314,4 +314,4 @@ npm run dev
 
 ---
 
-**¡Buena suerte con los ejercicios!** 🚀
+**¡Buena suerte con los ejercicios!**
