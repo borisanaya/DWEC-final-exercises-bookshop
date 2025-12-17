@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Librería - MongoDB Atlas</title>
+  <link rel="stylesheet" href="./css/styles.css">
+  
+</head>
+
+<body>
+  <div class="window">
+    <header class="toolbar toolbar-header">
+      <h1 class="title">Gestión de Libros - MongoDB Atlas</h1>
+    </header>
+    <div class="window-content">
+      <div class="pane-group">
+        <div class="pane">
+          <div class="wrapper" id="wrapper">
+            <!--Contenido de los libros-->
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="toolbar toolbar-footer">
+      <div style="display: flex; justify-content: center; padding: 10px;">
+        
+        <!-- Botón BÚSQUEDAS -->
+        <button class="btn" onclick="toggleDialog('dialogBusquedas')">
+          🔍 Búsquedas
+        </button>
+
+        <!-- Botón NUEVO LIBRO -->
+        <button class="btn" onclick="toggleDialog('dialogNuevo')">
+          ➕ Nuevo Libro
+        </button>
+
+        <!-- Botón TODOS -->
+        <button class="btn" id="btnTodos">
+          🏠 Todos
+        </button>
+      </div>
+    </footer>
+  </div>
+
+  <!-- Dialog BÚSQUEDAS -->
+  <dialog id="dialogBusquedas">
+    <div style="padding: 20px;">
+      <h3>Búsquedas</h3>
+      
+      <div style="margin: 20px 0;">
+        <label>Búsqueda por título:</label><br>
+        <input type="text" id="txtBuscar" placeholder="Título del libro">
+        <button class="btn" id="btnBuscar">🔍 Buscar</button>
+      </div>
+
+      <div style="margin: 20px 0;">
+        <label>Búsqueda por autor:</label><br>
+        <input type="text" id="txtBuscarAutor" placeholder="Nombre del autor">
+        <button class="btn" id="btnBuscarAutor">🔍 Buscar</button>
+      </div>
+
+      <button class="btn" onclick="toggleDialog('dialogBusquedas')">Cerrar</button>
+    </div>
+  </dialog>
+
+  <!-- Dialog NUEVO LIBRO -->
+  <dialog id="dialogNuevo">
+    <div style="padding: 20px;">
+      <h3>Nuevo Libro</h3>
+      
+      <div style="margin: 20px 0;">
+        <label>Título:</label><br>
+        <input type="text" id="txtNuevotitulo" placeholder="Título del libro">
+      </div>
+
+      <div style="margin: 20px 0;">
+        <label>Autor:</label><br>
+        <input type="text" id="txtNuevoAutor" placeholder="Nombre del autor">
+      </div>
+
+      <div style="margin: 20px 0;">
+        <label>Imagen:</label><br>
+        <input type="text" id="txtNuevaImagen" placeholder="nombre_imagen.jpg">
+      </div>
+
+      <button class="btn" id="btnNuevoLibro">💾 Guardar</button>
+      <button class="btn" onclick="toggleDialog('dialogNuevo')">Cerrar</button>
+    </div>
+  </dialog>
+
+  <!-- Notification -->
+  <div id="notification" class="notification"></div>
+
+  <script src="./js/app.js"></script>
+</body>
+
+</html>

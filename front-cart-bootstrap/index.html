@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Your Book Store - Carrito Bootstrap</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.0/font/bootstrap-icons.css">
+  <style>
+    body {
+      overflow: hidden;
+      height: 100vh;
+    }
+
+    .header-custom {
+      background-color: #0e0d0d;
+      padding: 15px 20px;
+    }
+
+    .contador-badge {
+      cursor: pointer;
+      font-size: 1rem;
+      padding: 0.5em 0.7em;
+      transition: background-color 0.3s;
+    }
+
+    .contador-badge:hover {
+      background-color: #3d5fb8 !important;
+    }
+
+    .main-content {
+      height: calc(100vh - 60px);
+      display: flex;
+      overflow: hidden;
+    }
+
+    .books-panel {
+      flex: 1;
+      overflow-y: auto;
+      padding: 20px;
+      background-color: #f8f9fa;
+    }
+
+    .cart-panel {
+      width: 350px;
+      background-color: #fff;
+      border-left: 1px solid #dee2e6;
+      overflow-y: auto;
+      transition: transform 0.3s ease;
+    }
+
+    .cart-panel.hidden {
+      transform: translateX(100%);
+      position: absolute;
+      right: 0;
+      height: 100%;
+    }
+
+    .book-card {
+      cursor: pointer;
+      transition: transform 0.2s, box-shadow 0.2s;
+      height: 100%;
+    }
+
+    .book-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    }
+
+    .book-img {
+      width: 100%;
+      height: 200px;
+      object-fit: cover;
+    }
+
+    .cart-item {
+      border-bottom: 1px solid #dee2e6;
+      padding: 15px;
+    }
+
+    .cart-item:last-child {
+      border-bottom: none;
+    }
+
+    .cart-item-img {
+      width: 50px;
+      height: 70px;
+      object-fit: cover;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Header -->
+  <header class="header-custom d-flex justify-content-between align-items-center">
+    <h1 class="text-white h3 mb-0">Your Book Store</h1>
+    <span id="contador" class="badge rounded-pill bg-primary contador-badge">0</span>
+  </header>
+
+  <!-- Main Content -->
+  <div class="main-content">
+    <!-- Panel de Libros -->
+    <div class="books-panel">
+      <div class="row row-cols-1 row-cols-md-3 row-cols-lg-4 g-4" id="izquierda">
+        <!-- Los libros se cargarán aquí -->
+      </div>
+    </div>
+
+    <!-- Panel del Carrito -->
+    <div class="cart-panel hidden" id="derecha">
+      <div class="p-3 border-bottom">
+        <h5 class="mb-0">Carrito de Compras</h5>
+      </div>
+      <div id="lista">
+        <!-- El carrito se mostrará aquí -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="./js/app.js"></script>
+
+</body>
+
+</html>

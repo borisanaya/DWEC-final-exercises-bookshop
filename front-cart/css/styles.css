@@ -1,0 +1,259 @@
+/*!
+ * Your Book Store - Styles
+ * Estilos unificados para front-cart
+ */
+
+/* ========================================
+   Reset y Base
+   ======================================== */
+
+* {
+  box-sizing: border-box;
+  cursor: default;
+  -webkit-user-select: none;
+}
+
+html {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: system, -apple-system, "Helvetica Neue", Helvetica, "Segoe UI", sans-serif;
+  font-size: 13px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ========================================
+   Layout Principal
+   ======================================== */
+
+.window {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #fff;
+}
+
+.window-content {
+  position: relative;
+  overflow-y: auto;
+  display: flex;
+  flex: 1;
+}
+
+/* ========================================
+   Cabecera
+   ======================================== */
+
+.cabecera {
+  background-color: #0e0d0d;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+span.blue {
+  background: #5178D0;
+  border-radius: 0.8em;
+  -moz-border-radius: 0.8em;
+  -webkit-border-radius: 0.8em;
+  color: #ffffff;
+  display: inline-block;
+  font-weight: bold;
+  line-height: 1.6em;
+  text-align: center;
+  width: 1.6em;
+  cursor: pointer;
+}
+
+span.blue:hover {
+  background: #3d5fb8;
+}
+
+/* ========================================
+   Panes
+   ======================================== */
+
+.pane-group {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+
+.pane {
+  position: relative;
+  overflow-y: auto;
+  flex: 1;
+  border-left: 1px solid #ddd;
+}
+
+.pane:first-child {
+  border-left: 0;
+}
+
+.pane-sm {
+  max-width: 300px;
+  min-width: 250px;
+  flex: none;
+}
+
+.sidebar {
+  background-color: #f5f5f4;
+}
+
+/* ========================================
+   Grid de Libros (Wrapper)
+   ======================================== */
+
+.wrapper {
+  border: 2px solid #5c5a5a;
+  background-color: #fffffe;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+  padding: 10px;
+}
+
+.wrapper > div {
+  border: 2px solid #8a8585;
+  background-color: #ffffff;
+  padding: 1em;
+  color: #0e0d0d;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.wrapper > div:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* ========================================
+   Carrito (List Group)
+   ======================================== */
+
+.list-group {
+  width: 100%;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.list-group-item {
+  padding: 10px;
+  font-size: 12px;
+  color: #414142;
+  border-top: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+}
+
+.list-group-item:first-child {
+  border-top: 0;
+}
+
+/* ========================================
+   Media Object
+   ======================================== */
+
+.media-object.pull-left {
+  margin-right: 10px;
+}
+
+.media-body {
+  overflow: hidden;
+  flex: 1;
+}
+
+.media-body strong {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.media-body p {
+  margin: 0 0 5px 0;
+  font-size: 11px;
+  color: #666;
+}
+
+/* ========================================
+   Utilidades
+   ======================================== */
+
+.pull-left {
+  float: left;
+}
+
+.img-circle {
+  border-radius: 50%;
+}
+
+/* ========================================
+   Botones
+   ======================================== */
+
+.btn {
+  display: inline-block;
+  padding: 3px 8px;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+  cursor: pointer;
+  border: 1px solid #c2c0c2;
+  border-radius: 4px;
+  color: #333;
+  background-color: #fcfcfc;
+  background-image: linear-gradient(to bottom, #fcfcfc 0%, #f1f1f1 100%);
+}
+
+.btn:hover {
+  background-color: #e8e8e8;
+}
+
+.btn:active {
+  background-color: #ddd;
+  background-image: none;
+}
+
+.btn-mini {
+  padding: 2px 6px;
+  font-size: 11px;
+}
+
+/* ========================================
+   Iconos
+   ======================================== */
+
+@font-face {
+  font-family: "photon-entypo";
+  src: url("../fonts/photon-entypo.eot");
+  src: url("../fonts/photon-entypo.eot?#iefix") format("eot"),
+       url("../fonts/photon-entypo.woff") format("woff"),
+       url("../fonts/photon-entypo.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+.icon:before {
+  font-family: "photon-entypo";
+  font-size: 100%;
+  -webkit-font-smoothing: antialiased;
+}
+
+.icon-minus-circled:before {
+  content: '\e81a';
+}

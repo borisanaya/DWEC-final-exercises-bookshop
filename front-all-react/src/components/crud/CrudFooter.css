@@ -1,0 +1,76 @@
+.crud-footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #f8f9fa;
+  border-top: 1px solid #dee2e6;
+  padding: 15px;
+  box-shadow: 0 -2px 4px rgba(0,0,0,0.1);
+}
+
+.footer-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.footer-btn {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.footer-btn:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+}
+
+.footer-btn:active {
+  transform: translateY(0);
+}
+
+.btn-search {
+  background-color: #0d6efd;
+  color: white;
+}
+
+.btn-search:hover {
+  background-color: #0b5ed7;
+}
+
+.btn-new {
+  background-color: #198754;
+  color: white;
+}
+
+.btn-new:hover {
+  background-color: #157347;
+}
+
+.btn-all {
+  background-color: #6c757d;
+  color: white;
+}
+
+.btn-all:hover {
+  background-color: #5c636a;
+}
+
+@media (max-width: 768px) {
+  .footer-buttons {
+    flex-direction: column;
+    gap: 8px;
+  }
+
+  .footer-btn {
+    width: 100%;
+  }
+}

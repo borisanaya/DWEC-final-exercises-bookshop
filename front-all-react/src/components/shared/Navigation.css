@@ -1,0 +1,42 @@
+.navigation {
+  background-color: #343a40;
+  display: flex;
+  justify-content: center;
+  gap: 0;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.nav-btn {
+  padding: 15px 40px;
+  border: none;
+  background-color: transparent;
+  color: #adb5bd;
+  font-size: 1rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.3s;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.05);
+  color: #ffffff;
+}
+
+.nav-btn.active {
+  color: #ffffff;
+  border-bottom-color: #0d6efd;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+@media (max-width: 768px) {
+  .navigation {
+    flex-direction: row;
+  }
+
+  .nav-btn {
+    flex: 1;
+    padding: 12px 20px;
+    font-size: 0.9rem;
+  }
+}
