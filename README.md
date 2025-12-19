@@ -27,5 +27,6 @@ Este repositorio contiene una colección de ejercicios prácticos para la asigna
 
 - El backend debe estar en funcionamiento para probar los frontends.
 - Las soluciones son orientativas y pueden variar en implementación.
+- Contenidos adpatados para el módulo de DWEC del CFGS DAW
 
 
